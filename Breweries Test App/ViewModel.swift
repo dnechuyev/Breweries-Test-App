@@ -54,7 +54,7 @@ class ViewModel: ObservableObject {
                     self.breveriesRes.append(contentsOf: allBreweries)
                     self.prevLoad = "JSON"
                 }
-                
+
             case.failure(let error):
                 DispatchQueue.main.async {
                     print("Error: \(error.localizedDescription)")

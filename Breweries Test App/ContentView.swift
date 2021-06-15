@@ -103,10 +103,12 @@ struct ContentView: View {
                                                     }
                                                 }
                                             }
-                                          /*  if brewery.latitude != nil && brewery.longitude != nil {
-                                                let coordinates = CLLocationCoordinate2D(latitude: brewery.latitude ?? 0, longitude: brewery.longitude ?? 0)
+                                            
+                                            if (brewery.latitude != nil && brewery.latitude != "" && brewery.longitude != nil && brewery.longitude != "") {
+                                                
+                                                let coordinates = CLLocationCoordinate2D(latitude: Double(brewery.latitude ?? "0.0") ?? 0, longitude: Double(brewery.longitude ?? "0.0") ?? 0)
                                                 MapButton(coordinates: coordinates)
-                                            }*/
+                                            }
                                         }
                                         Spacer()
                                     }
@@ -188,10 +190,11 @@ struct ContentView: View {
                                                     }
                                                 }
                                             }
-                                           // if brewery.latitude != nil && brewery.latitude != "" && brewery.longitude != nil && brewery.longitude != "" {
-                                                //let coordinates = CLLocationCoordinate2D(latitude: brewery.latitude ?? 0, longitude: brewery.longitude ?? 0)
-                                                //MapButton(coordinates: coordinates)
-                                           // }
+                                            if (brewery.latitude != nil && brewery.latitude != "" && brewery.longitude != nil && brewery.longitude != "") {
+                                                
+                                                let coordinates = CLLocationCoordinate2D(latitude: Double(brewery.latitude ?? "0.0") ?? 0, longitude: Double(brewery.longitude ?? "0.0") ?? 0)
+                                                MapButton(coordinates: coordinates)
+                                            }
                                         }
                                         Spacer()
                                     }
@@ -240,19 +243,20 @@ struct SafariView: UIViewControllerRepresentable {
     }
     
 }
-/*
+
 struct MapButton: View {
     var coordinates: CLLocationCoordinate2D
     
     var body: some View {
-        NavigationLink(destination: MapView(centerCoordinate: coordinates)){
+        NavigationLink(destination: MapView(coordinate: coordinates)){
             Text("Show on map")
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.green)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+            
         }
     }
 }
 
-*/
+
