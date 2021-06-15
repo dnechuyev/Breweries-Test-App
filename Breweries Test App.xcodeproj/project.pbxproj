@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B07766826711F98009C8630 /* Breweries_Test_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B07766626711F98009C8630 /* Breweries_Test_App.xcdatamodeld */; };
+		8B07766B26712206009C8630 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B07766A26712206009C8630 /* CoreDataController.swift */; };
+		8B1942702670138700C7A9F9 /* BreweryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B19426F2670138700C7A9F9 /* BreweryRequest.swift */; };
+		8B1942742670205700C7A9F9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1942732670205700C7A9F9 /* ViewModel.swift */; };
 		8B551D18266EB07B00E57DDF /* Breweries_Test_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B551D17266EB07B00E57DDF /* Breweries_Test_AppApp.swift */; };
 		8B551D1A266EB07B00E57DDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B551D19266EB07B00E57DDF /* ContentView.swift */; };
 		8B551D1C266EB07C00E57DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B551D1B266EB07C00E57DDF /* Assets.xcassets */; };
 		8B551D1F266EB07C00E57DDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B551D1E266EB07C00E57DDF /* Preview Assets.xcassets */; };
+		8BEB44CA267811B800758645 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB44C9267811B800758645 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B07766726711F98009C8630 /* Breweries_Test_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Breweries_Test_App.xcdatamodel; sourceTree = "<group>"; };
+		8B07766A26712206009C8630 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		8B19426F2670138700C7A9F9 /* BreweryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryRequest.swift; sourceTree = "<group>"; };
+		8B1942732670205700C7A9F9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8B551D14266EB07B00E57DDF /* Breweries Test App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breweries Test App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B551D17266EB07B00E57DDF /* Breweries_Test_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breweries_Test_AppApp.swift; sourceTree = "<group>"; };
 		8B551D19266EB07B00E57DDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B551D1B266EB07C00E57DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B551D1E266EB07C00E57DDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B551D20266EB07C00E57DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEB44C9267811B800758645 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B19426E26700F2D00C7A9F9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B19426F2670138700C7A9F9 /* BreweryRequest.swift */,
+				8B07766A26712206009C8630 /* CoreDataController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		8B551D0B266EB07B00E57DDF = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +73,10 @@
 			children = (
 				8B551D17266EB07B00E57DDF /* Breweries_Test_AppApp.swift */,
 				8B551D19266EB07B00E57DDF /* ContentView.swift */,
+				8B1942732670205700C7A9F9 /* ViewModel.swift */,
+				8B07766626711F98009C8630 /* Breweries_Test_App.xcdatamodeld */,
+				8BEB44C9267811B800758645 /* MapView.swift */,
+				8B19426E26700F2D00C7A9F9 /* Classes */,
 				8B551D1B266EB07C00E57DDF /* Assets.xcassets */,
 				8B551D20266EB07C00E57DDF /* Info.plist */,
 				8B551D1D266EB07C00E57DDF /* Preview Content */,
@@ -138,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEB44CA267811B800758645 /* MapView.swift in Sources */,
+				8B1942702670138700C7A9F9 /* BreweryRequest.swift in Sources */,
+				8B07766826711F98009C8630 /* Breweries_Test_App.xcdatamodeld in Sources */,
+				8B07766B26712206009C8630 /* CoreDataController.swift in Sources */,
 				8B551D1A266EB07B00E57DDF /* ContentView.swift in Sources */,
+				8B1942742670205700C7A9F9 /* ViewModel.swift in Sources */,
 				8B551D18266EB07B00E57DDF /* Breweries_Test_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8B07766626711F98009C8630 /* Breweries_Test_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8B07766726711F98009C8630 /* Breweries_Test_App.xcdatamodel */,
+			);
+			currentVersion = 8B07766726711F98009C8630 /* Breweries_Test_App.xcdatamodel */;
+			path = Breweries_Test_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8B551D0C266EB07B00E57DDF /* Project object */;
 }

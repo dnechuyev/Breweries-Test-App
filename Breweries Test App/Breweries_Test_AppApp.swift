@@ -2,7 +2,7 @@
 //  Breweries_Test_AppApp.swift
 //  Breweries Test App
 //
-//  Created by developer on 07.06.2021.
+//  Created by Dmytro Nechuyev on 07.06.2021.
 //
 
 import SwiftUI
